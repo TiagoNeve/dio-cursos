@@ -38,3 +38,23 @@
     É um schema no formato XML usado apra definir a estrutura de dados que será validada no XML.
     O XSD functiona como uma documentação de como deve ser montado o SOAP Message (XML) que será enviado através de Web Service
     soapui.com => Ferramenta de verificação de URI que respondem um SOAP
+### Aprenda o que são REST, API e JSON
+    REST - Representational State Transfer
+    É um estilo de arquitetura de software que define a implmentação de um serviço web.
+    Podem trabalhar com os formatos XML, JSON ou outros.
+    Permite integrações entre aplicações e também entre cliente e servidor em páginas web e aplicações
+    Utiliza dos métodos HTTP para definir a operação que está sendo efetuada
+    Arquitetura de fácil compreensão
+    Quando uma aplicação web disponibiliza um conjunto de rotinas e padrões através de serviços web podemos chamar esse conjunto de API.
+    API - Application Programming Interface
+    São conjuntos de rotinas documentados e disponibilizados por uma aplicação para que outras aplicações possam consumir suas funcionalidades
+    Ficou popular com o aumento dos web services
+    As maiores plataformas de tecnologia disponibilizam APIs para acessos de suas funcionalidades, algumas delas são: Facebook, Twitter, Telegram, Whatsapp, GitHub...
+    GET - Solicita a representação de um recurso
+    POST - Solicita a criação de um recurso
+    DELETE - Solicita a exclusão de um recurso
+    PUT - Solicitar a atualização de um recurso
+    JSON - JavaScript Object Notation
+    Formatação leve utilizada para troca de mensagens entre sistemas.
+    Usa-se de uma estrutura de chave e valor e também de listas ordenadas
+    Um dos formatos mais populares e mais utilizados para troca de mensagens entre sistemas.
