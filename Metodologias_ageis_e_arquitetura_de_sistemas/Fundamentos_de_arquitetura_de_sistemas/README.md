@@ -4,7 +4,7 @@
 1.[Vantagens e desenvolvimento de Web Services](#)
 
 ## Vantagens e desenvolvimento de Web Services
-### O que são Web Services
+### 1. O que são Web Services
     São soluções para aplicações se comunicarem independente de lingaguem, softwares e hardwares utilizados.
     Inicialmente os Web Services foram criados para troca de mensagens utilizando a linguagem XML sobre o protocolo HTTP sendo identificado por URI.
     Web Services são API's que se comunicam por meio de redes sobre o protocolo HTTP.
@@ -14,7 +14,7 @@
     XML => Tags; JSON => Chave e Valor
     Vantagens: Linguagem comum de comunicação; Integração; Reutilização de implementação; Segurança; Custos;
     Principais Tecnologias: SOAP; REST; XML; JSON;
-### Estrutura SOAP
+### 2. Estrutura SOAP
     SOAP - Simple Object Access Protocol
     Protocolo baseado em XML para acessar serviços web principalmente por HTTP
     Foi desenvolvido para resolver integrações entre aplicações.
@@ -30,7 +30,7 @@
     SOAP Header: Titulo das informações que serão transmitidas. Elemento onde possui informações de atributos e metadados da requisição.
     SOAP Body: Conteúdo da informação. Elemento que contém os detalhes da mensagem
     
-### Entendendo o que é WSDL e XSD
+### 3. Entendendo o que é WSDL e XSD
     WSDL - Web Services Description Langauge => Contrato de serviços
     Usado para descrever Web Services, funciona como um contrato do serviço
     A descrição é feito em um documento XML, onde é descrito o serviço, especificações de acesso, operações e métodos.
@@ -38,7 +38,7 @@
     É um schema no formato XML usado apra definir a estrutura de dados que será validada no XML.
     O XSD functiona como uma documentação de como deve ser montado o SOAP Message (XML) que será enviado através de Web Service
     soapui.com => Ferramenta de verificação de URI que respondem um SOAP
-### Aprenda o que são REST, API e JSON
+### 4. Aprenda o que são REST, API e JSON
     REST - Representational State Transfer
     É um estilo de arquitetura de software que define a implmentação de um serviço web.
     Podem trabalhar com os formatos XML, JSON ou outros.
@@ -58,7 +58,7 @@
     Formatação leve utilizada para troca de mensagens entre sistemas.
     Usa-se de uma estrutura de chave e valor e também de listas ordenadas
     Um dos formatos mais populares e mais utilizados para troca de mensagens entre sistemas.
-### Veja sobre integração com REST e métodos HTTP na prática
+### 5. Veja sobre integração com REST e métodos HTTP na prática
     * Código de Estado
     Usado pelo servidor para avisar o cliente sobre o estado da operação solicitada
     1xx -> Informativo
