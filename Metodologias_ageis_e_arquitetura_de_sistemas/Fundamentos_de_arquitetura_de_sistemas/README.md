@@ -14,3 +14,19 @@
     XML => Tags; JSON => Chave e Valor
     Vantagens: Linguagem comum de comunicação; Integração; Reutilização de implementação; Segurança; Custos;
     Principais Tecnologias: SOAP; REST; XML; JSON;
+### Estrutura SOAP
+    SOAP - Simple Object Access Protocol
+    Protocolo baseado em XML para acessar serviços web principalmente por HTTP
+    Foi desenvolvido para resolver integrações entre aplicações.
+    Independente de plataforma e software.
+    Meio de transporte genérico, ou seja, pode ser usado por outros protocolos além do HTTP.
+    XML - Extensible Markup Language
+    Linguagem de marcação criada na década de 90 pela W3C
+    Facilita a separação de conteúdo
+    Não tem limitação de criação de tags
+    Linguagem comum para integrações entre aplicações.
+    SOAP Message -> Possui uma estrutura única que deve ser seguida: 
+    SOAP Envelope: Tudo fica dentro nessa tag. Primeiro elemento do documento e é usado para encapsular toda a mensagem SOAP.
+    SOAP Header: Titulo das informações que serão transmitidas. Elemento onde possui informações de atributos e metadados da requisição.
+    SOAP Body: Conteúdo da informação. Elemento que contém os detalhes da mensagem
+    
