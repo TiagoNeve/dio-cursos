@@ -66,4 +66,4 @@
     3xx -> Redirecionamento
     4xx -> Erro do Cliente
     5xx -> Erro do Servidor
-    
+
