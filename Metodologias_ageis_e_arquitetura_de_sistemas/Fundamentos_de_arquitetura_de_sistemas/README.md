@@ -1,0 +1,69 @@
+# Fundamentos de Arquitetura de Sistemas
+
+## Conteúdos
+1.[Vantagens e desenvolvimento de Web Services](#)
+
+## Vantagens e desenvolvimento de Web Services
+### O que são Web Services
+    São soluções para aplicações se comunicarem independente de lingaguem, softwares e hardwares utilizados.
+    Inicialmente os Web Services foram criados para troca de mensagens utilizando a linguagem XML sobre o protocolo HTTP sendo identificado por URI.
+    Web Services são API's que se comunicam por meio de redes sobre o protocolo HTTP.
+    O Web Service tem acesso ao banco de dados e disponibiliza um URI para que outra aplicação possa acessar essas URI e os dados possam ser trocados.
+    A troca de informações são feitas através das linguagens de marcação: XML ou JSON.
+    O Web service pode receber uma requisição na sua URI e pode também receber informações em XML ou JSON para que essas informações possam ser tratadas, por exemplo: Requisições POST em que se envia dados ao banco de dados.
+    XML => Tags; JSON => Chave e Valor
+    Vantagens: Linguagem comum de comunicação; Integração; Reutilização de implementação; Segurança; Custos;
+    Principais Tecnologias: SOAP; REST; XML; JSON;
+### Estrutura SOAP
+    SOAP - Simple Object Access Protocol
+    Protocolo baseado em XML para acessar serviços web principalmente por HTTP
+    Foi desenvolvido para resolver integrações entre aplicações.
+    Independente de plataforma e software.
+    Meio de transporte genérico, ou seja, pode ser usado por outros protocolos além do HTTP.
+    XML - Extensible Markup Language
+    Linguagem de marcação criada na década de 90 pela W3C
+    Facilita a separação de conteúdo
+    Não tem limitação de criação de tags
+    Linguagem comum para integrações entre aplicações.
+    SOAP Message -> Possui uma estrutura única que deve ser seguida: 
+    SOAP Envelope: Tudo fica dentro nessa tag. Primeiro elemento do documento e é usado para encapsular toda a mensagem SOAP.
+    SOAP Header: Titulo das informações que serão transmitidas. Elemento onde possui informações de atributos e metadados da requisição.
+    SOAP Body: Conteúdo da informação. Elemento que contém os detalhes da mensagem
+    
+### Entendendo o que é WSDL e XSD
+    WSDL - Web Services Description Langauge => Contrato de serviços
+    Usado para descrever Web Services, funciona como um contrato do serviço
+    A descrição é feito em um documento XML, onde é descrito o serviço, especificações de acesso, operações e métodos.
+    XSD - XML Schema Definition
+    É um schema no formato XML usado apra definir a estrutura de dados que será validada no XML.
+    O XSD functiona como uma documentação de como deve ser montado o SOAP Message (XML) que será enviado através de Web Service
+    soapui.com => Ferramenta de verificação de URI que respondem um SOAP
+### Aprenda o que são REST, API e JSON
+    REST - Representational State Transfer
+    É um estilo de arquitetura de software que define a implmentação de um serviço web.
+    Podem trabalhar com os formatos XML, JSON ou outros.
+    Permite integrações entre aplicações e também entre cliente e servidor em páginas web e aplicações
+    Utiliza dos métodos HTTP para definir a operação que está sendo efetuada
+    Arquitetura de fácil compreensão
+    Quando uma aplicação web disponibiliza um conjunto de rotinas e padrões através de serviços web podemos chamar esse conjunto de API.
+    API - Application Programming Interface
+    São conjuntos de rotinas documentados e disponibilizados por uma aplicação para que outras aplicações possam consumir suas funcionalidades
+    Ficou popular com o aumento dos web services
+    As maiores plataformas de tecnologia disponibilizam APIs para acessos de suas funcionalidades, algumas delas são: Facebook, Twitter, Telegram, Whatsapp, GitHub...
+    GET - Solicita a representação de um recurso
+    POST - Solicita a criação de um recurso
+    DELETE - Solicita a exclusão de um recurso
+    PUT - Solicitar a atualização de um recurso
+    JSON - JavaScript Object Notation
+    Formatação leve utilizada para troca de mensagens entre sistemas.
+    Usa-se de uma estrutura de chave e valor e também de listas ordenadas
+    Um dos formatos mais populares e mais utilizados para troca de mensagens entre sistemas.
+### Veja sobre integração com REST e métodos HTTP na prática
+    * Código de Estado
+    Usado pelo servidor para avisar o cliente sobre o estado da operação solicitada
+    1xx -> Informativo
+    2xx -> Sucesso
+    3xx -> Redirecionamento
+    4xx -> Erro do Cliente
+    5xx -> Erro do Servidor
+
