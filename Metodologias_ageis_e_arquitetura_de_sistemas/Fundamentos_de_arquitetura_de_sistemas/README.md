@@ -30,3 +30,11 @@
     SOAP Header: Titulo das informações que serão transmitidas. Elemento onde possui informações de atributos e metadados da requisição.
     SOAP Body: Conteúdo da informação. Elemento que contém os detalhes da mensagem
     
+### Entendendo o que é WSDL e XSD
+    WSDL - Web Services Description Langauge => Contrato de serviços
+    Usado para descrever Web Services, funciona como um contrato do serviço
+    A descrição é feito em um documento XML, onde é descrito o serviço, especificações de acesso, operações e métodos.
+    XSD - XML Schema Definition
+    É um schema no formato XML usado apra definir a estrutura de dados que será validada no XML.
+    O XSD functiona como uma documentação de como deve ser montado o SOAP Message (XML) que será enviado através de Web Service
+    soapui.com => Ferramenta de verificação de URI que respondem um SOAP
