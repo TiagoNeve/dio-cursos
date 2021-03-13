@@ -58,3 +58,4 @@
     Formatação leve utilizada para troca de mensagens entre sistemas.
     Usa-se de uma estrutura de chave e valor e também de listas ordenadas
     Um dos formatos mais populares e mais utilizados para troca de mensagens entre sistemas.
+    
