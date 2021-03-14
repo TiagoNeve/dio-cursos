@@ -81,3 +81,6 @@
     Contra => Monitoramento mais complexo, Provisionamento mais complexo
     Microserviços #3: Pros => Stack dinâmica, Simples escalabilidade, Desacoplamento, Menor complexidade
     Contra => Provisionamento mais complexo, Plataforma inteira depende do gerenciador de pipeline
+### 3. Gerenciamento de erros e volume de acesso
+    Mais complexo em processos assíncronas e nos pipeline, a solução é criar um Dead letter queue, Filas de re-tentativas
+    
