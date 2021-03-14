@@ -67,3 +67,8 @@
     4xx -> Erro do Cliente
     5xx -> Erro do Servidor
 
+## Conceitos de arquitetura em aplicações para Internet
+
+### introdução a arquitetura de sistemas
+    Monolito: Clientes se conectam no servidor atraǘes de HTTP e o servidor executa as requisições do cliente
+    Microserviços: Serviços dividios em nós que podem fazer coisas difrentes e ter responsabilidades diferentes, um serviço terá cada aplicação e responsabilidade, que podem ter conexões com bando de dados ou serviços externos e até próprios serviços internos. Existe várias formas de utilizar e organizar uma arquitetura de microserviços, vale a pena dar uma olhada em cada uma.
