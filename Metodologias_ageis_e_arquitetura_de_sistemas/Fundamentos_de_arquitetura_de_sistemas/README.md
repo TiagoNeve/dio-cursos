@@ -69,6 +69,15 @@
 
 ## Conceitos de arquitetura em aplicações para Internet
 
-### introdução a arquitetura de sistemas
+### 1. introdução a arquitetura de sistemas
     Monolito: Clientes se conectam no servidor atraǘes de HTTP e o servidor executa as requisições do cliente
     Microserviços: Serviços dividios em nós que podem fazer coisas difrentes e ter responsabilidades diferentes, um serviço terá cada aplicação e responsabilidade, que podem ter conexões com bando de dados ou serviços externos e até próprios serviços internos. Existe várias formas de utilizar e organizar uma arquitetura de microserviços, vale a pena dar uma olhada em cada uma.
+### 2. Comparando os modelos Monolito e Microserviços
+    Monolito: Pros => Baixa complexidade, Monitoramento simplificado
+    Contas => Stack única, Compartilhamento de recursos, Acoplamento, Mais complexo a escalabilidade
+    Microserviços #1: Pros => Stack dinâmica, Simples escalabilidade
+    Contra => Acoplamento, Monitoramento mais complexo, Provisionamento mais complexo
+    Microserviços #2: Pros => Stack dinâmica, Simples escalabilidade, Desacoplamento
+    Contra => Monitoramento mais complexo, Provisionamento mais complexo
+    Microserviços #3: Pros => Stack dinâmica, Simples escalabilidade, Desacoplamento, Menor complexidade
+    Contra => Provisionamento mais complexo, Plataforma inteira depende do gerenciador de pipeline
