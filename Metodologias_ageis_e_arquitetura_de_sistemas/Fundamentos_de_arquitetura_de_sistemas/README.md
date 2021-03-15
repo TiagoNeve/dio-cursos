@@ -108,3 +108,13 @@
     Padrão OASIS suportado pelas linguagens de programação mais populares.
     MQTT Broker -> Utiliza o Modelo Publish/Subscribe, trabalha de forma middleware para gerar um roteamento de recebimento de dados e compartilhamento dos mesmos.
     Publicar -> pub mqtt://uri/{id}/{topico}/{subtopico} response
+### 3. Flexibilidade dos tópicos e Cloud
+    protocolo :// broker / user identifier / senso / information type 
+    mqtt://broker.io/a6fb45/gps/position
+    Subscribe -> sub mqtt://broker/user/gps/position
+    Formas de obter os dados que estão na Nuvem.
+    QoS 0 -> Nível mínimo de menor esforço / Sem garantia de entrega / Mensagem não é retransmitida
+    QoS 1 -> Garante que a mensagem foi entregue no mínimo uma vez ao recebedor / Mensagem pode ser retransmitida se não houver confirmação de entrega
+    QoS 2 -> Garante que a mensagem foi entregue no mínimo uma vez ao recebedor / Mensagem pode ser retransmitida se não houver confirmação de entrega.
+    Cloud -> Grande e cada vez maior número de devices conectados / TBs ou PBs de informações / Potencial de escala global
+    Cluster , Kasandra , Document DB
