@@ -4,7 +4,7 @@
 1.[Vantagens e desenvolvimento de Web Services](#)
 
 ## Vantagens e desenvolvimento de Web Services
-### O que são Web Services
+### 1. O que são Web Services
     São soluções para aplicações se comunicarem independente de lingaguem, softwares e hardwares utilizados.
     Inicialmente os Web Services foram criados para troca de mensagens utilizando a linguagem XML sobre o protocolo HTTP sendo identificado por URI.
     Web Services são API's que se comunicam por meio de redes sobre o protocolo HTTP.
@@ -14,7 +14,7 @@
     XML => Tags; JSON => Chave e Valor
     Vantagens: Linguagem comum de comunicação; Integração; Reutilização de implementação; Segurança; Custos;
     Principais Tecnologias: SOAP; REST; XML; JSON;
-### Estrutura SOAP
+### 2. Estrutura SOAP
     SOAP - Simple Object Access Protocol
     Protocolo baseado em XML para acessar serviços web principalmente por HTTP
     Foi desenvolvido para resolver integrações entre aplicações.
@@ -30,7 +30,7 @@
     SOAP Header: Titulo das informações que serão transmitidas. Elemento onde possui informações de atributos e metadados da requisição.
     SOAP Body: Conteúdo da informação. Elemento que contém os detalhes da mensagem
     
-### Entendendo o que é WSDL e XSD
+### 3. Entendendo o que é WSDL e XSD
     WSDL - Web Services Description Langauge => Contrato de serviços
     Usado para descrever Web Services, funciona como um contrato do serviço
     A descrição é feito em um documento XML, onde é descrito o serviço, especificações de acesso, operações e métodos.
@@ -38,7 +38,7 @@
     É um schema no formato XML usado apra definir a estrutura de dados que será validada no XML.
     O XSD functiona como uma documentação de como deve ser montado o SOAP Message (XML) que será enviado através de Web Service
     soapui.com => Ferramenta de verificação de URI que respondem um SOAP
-### Aprenda o que são REST, API e JSON
+### 4. Aprenda o que são REST, API e JSON
     REST - Representational State Transfer
     É um estilo de arquitetura de software que define a implmentação de um serviço web.
     Podem trabalhar com os formatos XML, JSON ou outros.
@@ -58,7 +58,7 @@
     Formatação leve utilizada para troca de mensagens entre sistemas.
     Usa-se de uma estrutura de chave e valor e também de listas ordenadas
     Um dos formatos mais populares e mais utilizados para troca de mensagens entre sistemas.
-### Veja sobre integração com REST e métodos HTTP na prática
+### 5. Veja sobre integração com REST e métodos HTTP na prática
     * Código de Estado
     Usado pelo servidor para avisar o cliente sobre o estado da operação solicitada
     1xx -> Informativo
@@ -67,3 +67,44 @@
     4xx -> Erro do Cliente
     5xx -> Erro do Servidor
 
+## Conceitos de arquitetura em aplicações para Internet
+
+### 1. introdução a arquitetura de sistemas
+    Monolito: Clientes se conectam no servidor atraǘes de HTTP e o servidor executa as requisições do cliente
+    Microserviços: Serviços dividios em nós que podem fazer coisas difrentes e ter responsabilidades diferentes, um serviço terá cada aplicação e responsabilidade, que podem ter conexões com bando de dados ou serviços externos e até próprios serviços internos. Existe várias formas de utilizar e organizar uma arquitetura de microserviços, vale a pena dar uma olhada em cada uma.
+### 2. Comparando os modelos Monolito e Microserviços
+    Monolito: Pros => Baixa complexidade, Monitoramento simplificado
+    Contas => Stack única, Compartilhamento de recursos, Acoplamento, Mais complexo a escalabilidade
+    Microserviços #1: Pros => Stack dinâmica, Simples escalabilidade
+    Contra => Acoplamento, Monitoramento mais complexo, Provisionamento mais complexo
+    Microserviços #2: Pros => Stack dinâmica, Simples escalabilidade, Desacoplamento
+    Contra => Monitoramento mais complexo, Provisionamento mais complexo
+    Microserviços #3: Pros => Stack dinâmica, Simples escalabilidade, Desacoplamento, Menor complexidade
+    Contra => Provisionamento mais complexo, Plataforma inteira depende do gerenciador de pipeline
+### 3. Gerenciamento de erros e volume de acesso
+    Mais complexo em processos assíncronas e nos pipeline, a solução é criar um Dead letter queue, Filas de re-tentativas
+
+## A arquitetura de aplicações móveis e internet das coisas
+
+### 1. Conceitos da Internet das Coisas
+    Conhecimentos fundamentais da internet. A internet das coisas são uma forma de coisas, objetos, possam acessar a internet e dessa
+    maneira conseguir criar uma rede pessoal própria que se comuniquem entre si.
+    Usar as Coisas, Nuvens e Inteligência. Basicamente as coisas vão se conectar com as Nuvens e a inteligência utiliza as Nuvens para 
+    obter os dados ali presente e executar tarefas, rotinas.
+    Utiliza sensores para poder estabelecer uma automação nas residências.
+    Utiliza em wearables e na agricultura. Também em controle de veículos e também em cadeias de suprimentos.
+    É possível utilizar a energia eficiente com IOT.
+    Computação Ubíqua -> Quando a tecnologia toma conta das novas vidas, em que a tecnologia está completamente incorporada em nossas vidas.
+    Desafios da Internet das Coisas -> Privacidade e Segurança; Quantidade exponencial de dispositivos conectadas na rede; Ser capaz de processar e armazenar uma enorme quantidade de informações; Gerar valor a partir dos dados coletados; 
+### 2. Arquitetura da internet das coisas e protocolo de comunicação
+    Os sensores precisar ter um baixo consumo de energia e pouco consumo de dados.
+    O Arduino é uma plataforma de Prototipagem, Com entradas/saídas/ Desenvolvedor escreve em C/C++ / Interface serial ou USB / Shields
+    Sistemas Embarcados: MCUs -> Microcontrolador de chip único, Sistema operacional real time, Embarcado, Uso industrial, médico, militar, transporte.
+    Minicomputadores: Raspberry Pi -> Computador completo, Hardware integrado em uma única placa, Roda SO Linux ou Windows, Uso doméstico e comercial.
+    Protocolo MQTT -> Protocolo de IOT para se comunicar com a nuvem
+    Base na pilha do TCP/IP
+    Protocolo de mensagem assíncrona (M2M)
+    Criado pela IBM para conectar sensores de pipelines de petŕoleo a satélites
+    Padrão OASIS suportado pelas linguagens de programação mais populares.
+    MQTT Broker -> Utiliza o Modelo Publish/Subscribe, trabalha de forma middleware para gerar um roteamento de recebimento de dados e compartilhamento dos mesmos.
+    Publicar -> pub mqtt://uri/{id}/{topico}/{subtopico} response
