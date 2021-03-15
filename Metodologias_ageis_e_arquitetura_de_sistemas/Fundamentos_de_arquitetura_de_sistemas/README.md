@@ -96,3 +96,15 @@
     É possível utilizar a energia eficiente com IOT.
     Computação Ubíqua -> Quando a tecnologia toma conta das novas vidas, em que a tecnologia está completamente incorporada em nossas vidas.
     Desafios da Internet das Coisas -> Privacidade e Segurança; Quantidade exponencial de dispositivos conectadas na rede; Ser capaz de processar e armazenar uma enorme quantidade de informações; Gerar valor a partir dos dados coletados; 
+### 2. Arquitetura da internet das coisas e protocolo de comunicação
+    Os sensores precisar ter um baixo consumo de energia e pouco consumo de dados.
+    O Arduino é uma plataforma de Prototipagem, Com entradas/saídas/ Desenvolvedor escreve em C/C++ / Interface serial ou USB / Shields
+    Sistemas Embarcados: MCUs -> Microcontrolador de chip único, Sistema operacional real time, Embarcado, Uso industrial, médico, militar, transporte.
+    Minicomputadores: Raspberry Pi -> Computador completo, Hardware integrado em uma única placa, Roda SO Linux ou Windows, Uso doméstico e comercial.
+    Protocolo MQTT -> Protocolo de IOT para se comunicar com a nuvem
+    Base na pilha do TCP/IP
+    Protocolo de mensagem assíncrona (M2M)
+    Criado pela IBM para conectar sensores de pipelines de petŕoleo a satélites
+    Padrão OASIS suportado pelas linguagens de programação mais populares.
+    MQTT Broker -> Utiliza o Modelo Publish/Subscribe, trabalha de forma middleware para gerar um roteamento de recebimento de dados e compartilhamento dos mesmos.
+    Publicar -> pub mqtt://uri/{id}/{topico}/{subtopico} response
