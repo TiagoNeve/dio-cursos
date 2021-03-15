@@ -83,4 +83,16 @@
     Contra => Provisionamento mais complexo, Plataforma inteira depende do gerenciador de pipeline
 ### 3. Gerenciamento de erros e volume de acesso
     Mais complexo em processos assíncronas e nos pipeline, a solução é criar um Dead letter queue, Filas de re-tentativas
-    
+
+## A arquitetura de aplicações móveis e internet das coisas
+
+### 1. Conceitos da Internet das Coisas
+    Conhecimentos fundamentais da internet. A internet das coisas são uma forma de coisas, objetos, possam acessar a internet e dessa
+    maneira conseguir criar uma rede pessoal própria que se comuniquem entre si.
+    Usar as Coisas, Nuvens e Inteligência. Basicamente as coisas vão se conectar com as Nuvens e a inteligência utiliza as Nuvens para 
+    obter os dados ali presente e executar tarefas, rotinas.
+    Utiliza sensores para poder estabelecer uma automação nas residências.
+    Utiliza em wearables e na agricultura. Também em controle de veículos e também em cadeias de suprimentos.
+    É possível utilizar a energia eficiente com IOT.
+    Computação Ubíqua -> Quando a tecnologia toma conta das novas vidas, em que a tecnologia está completamente incorporada em nossas vidas.
+    Desafios da Internet das Coisas -> Privacidade e Segurança; Quantidade exponencial de dispositivos conectadas na rede; Ser capaz de processar e armazenar uma enorme quantidade de informações; Gerar valor a partir dos dados coletados; 
